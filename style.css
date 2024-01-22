@@ -123,45 +123,35 @@
     cursor: pointer;
   }
 
-@media screen and (max-width: 768px) {
-    
-    .container{
-        grid-template-columns: 1fr;
+  @media screen and (max-width: 768px) {
+    .Calculadora {
+        height: 100vh;
+        max-width: none;
+        border-radius: 0;
     }
 
-    .container main .trending,
-    .container main .playlist{
-        display: none;
+    #pantalla {
+        height: 100px;
+        border-radius: 0;
     }
 
-    .container main header .search{
-        width: 40%;
+    .Btn-Clear,
+    .Btn-Delete,
+    .Btn-AC,
+    .Btn-Menor-Mayor,
+    .Btn-Porcentaje,
+    .Btn-Divisor,
+    .Btn-Multiplicacion,
+    .Btn-Suma,
+    .Btn-Resta,
+    .Btn-Igual,
+    .Btn-Cero {
+        width: 50%;
+        font-size: 18px;
     }
 
-    .container main header .search input{
-        display: block;
+    .Btn {
+        width: 50%;
+        font-size: 18px;
     }
-
-    .container .right-section{
-        padding: 20px 36px;
-    }
-
-    .container .right-section .profile{
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-
-    .container .right-section .music-player{
-        height: 100%;
-    }
-
-    .container .right-section .music-player .song-info img{
-        width: 300px;
-        height: 190px;
-    }
-
-    .container .right-section .music-player .buttons i{
-        font-size: 22px;
-    }
-
 }
