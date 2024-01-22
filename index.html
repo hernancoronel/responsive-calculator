@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="icon" type="image/png" href="img/Logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="Calculadora">
+    <!-- Pantalla -->
+    <input type="text" id="pantalla" readonly>
+    <br>
+    <!-- Botones de Calculadora -->
+    <input id="Clear" class="Btn-Clear button" type="button" value="Clear" onclick="limpiarPantalla()">
+    <input id="Delete" class="Btn-Delete button" type="button" value="Delete" onclick="borrarDigito()">
+    <input id="Reiniciar" class="Btn-AC button" type="button" value="AC" onclick="reiniciarValorPantalla()">
+    <input class="Btn-Menor-Mayor button" type="button" value="+/-" onclick="convertirPositivoNegativo()">
+    <input id="Btn-Porcentaje" class="Btn-Porcentaje button" type="button" value="%">
+    <input class="Btn-Divisor button" type="button" value="/" onclick="agregar('/')">
+    <br>
+    <input class="Btn button" type="button" value="7" onclick="agregar('7')">
+    <input class="Btn button" type="button" value="8" onclick="agregar('8')">
+    <input class="Btn button" type="button" value="9" onclick="agregar('9')">
+    <input class="Btn-Multiplicacion button" type="button" value="X" onclick="agregar('*')">
+    <br>
+    <input class="Btn button" type="button" value="4" onclick="agregar('4')">
+    <input class="Btn button" type="button" value="5" onclick="agregar('5')">
+    <input class="Btn button" type="button" value="6" onclick="agregar('6')">
+    <input class="Btn-Resta button" type="button" value="-" onclick="agregar('-')">
+    <br>
+    <input class="Btn button" type="button" value="1" onclick="agregar('1')">
+    <input class="Btn button" type="button" value="2" onclick="agregar('2')">
+    <input class="Btn button" type="button" value="3" onclick="agregar('3')">
+    <input class="Btn-Suma button" type="button" value="+" onclick="agregar('+')">
+    <br>
+    <input class="Btn-Cero button" type="button" value="0" onclick="agregar('0')">
+    <input class="Btn button" type="button" value="," onclick="agregar('.')">
+    <input class="Btn-Igual button" type="button" value="=" onclick="calcular()">
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
